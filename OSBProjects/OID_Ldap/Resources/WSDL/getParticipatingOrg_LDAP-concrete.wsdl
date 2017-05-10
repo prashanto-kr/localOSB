@@ -1,0 +1,15 @@
+<wsdl:definitions targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/ldap/CMN/OID_Ldap/getParticipatingOrg_LDAP" name="getParticipatingOrg_LDAP-concrete" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap12/">
+  <wsdl:import location="getParticipatingOrg_LDAP.wsdl" namespace="http://xmlns.oracle.com/pcbpel/adapter/ldap/CMN/OID_Ldap/getParticipatingOrg_LDAP"/>
+  <wsdl:binding name="search_ptt-binding" type="get:search_ptt" xmlns:get="http://xmlns.oracle.com/pcbpel/adapter/ldap/CMN/OID_Ldap/getParticipatingOrg_LDAP">
+    <soap:binding style="document" transport="http://www.bea.com/wli/sb/transports/jca"/>
+    <wsdl:operation name="search">
+      <soap:operation soapAction="search"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+</wsdl:definitions>
